@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Application Form | Mountain Shop</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.mountainshop.net/assets/images/Mountian_Shop_Favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="application-form.css">
+    <body>
+        <header>
+        <img src="https://www.mountainshop.net/assets/images/logo.png" alt="Mountain Shop Logo" class="center">
+        <h1 align="center">Application Form</h1>
+        </header>
+        <form align="center" action="https://formsubmit.co/mountainshopapplications@gmail.com" method="POST">
+            <!-- honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- remove captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- successful submission -->
+            <input type="hidden" name="_next" value="success.html">
+            <!-- Form Contents -->
+            <label for="name"><b>Full Name</b></label><br>
+            <input type="text" id="name" name="Name" required>
+            <br>
+            <br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" id="email" name="Email" required>
+            <br>
+            <br>
+            <label for="phone"><b>Phone Number</b></label><br>
+            <input type="tel" id="phone" name="Phone&nbsp;Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            <br>
+            <br>
+            <label for="description"><b>Outdoor Experience</b></label><br>
+            <textarea type="text" id="description" name="Experience" placeholder="please provide a description of your outdoor experience" rows="10" cols="40" required></textarea>
+            <br>
+            <br>
+            <label for="file"><b>Attach Resume</b></label><br>
+            <input type="file" id="file" name="Resume" required>
+            <br>
+            <br>
+            <label for="otherdocs"><b>Additional Documents</b></label><br>
+            <input type="file" id="otherdocs" name="Additional&nbsp;Docs" multiple>
+            <br>
+            <br>
+            <button type="submit" class="button"><b>Submit Application</b></button>
+        </form>
+    </body>
+</html>
