@@ -5,7 +5,7 @@
     </head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.mountainshop.net/assets/images/Mountian_Shop_Favicon.png" rel="shortcut icon">
-    <link rel="stylesheet" href="application_form.css">
+    <link rel="stylesheet" href="application-form.css">
     <body>
         <header>
         <img src="https://www.mountainshop.net/assets/images/logo.png" alt="Mountain Shop Logo" class="center">
@@ -13,11 +13,12 @@
         </header>
         <form align="center" action="https://formsubmit.co/mountainshopapplications@gmail.com" method="POST">
             <!-- honeypot -->
-
+            <input type="text" name="_honey" style="display: none;">
             <!-- remove captcha -->
-
+            <input type="hidden" name="_captcha" value="false">
             <!-- successful submission -->
-
+            <input type="hidden" name="_next" value="success.html">
+            <!-- Form Contents -->
             <label for="name"><b>Full Name</b></label><br>
             <input type="text" id="name" name="Name" required>
             <br>
