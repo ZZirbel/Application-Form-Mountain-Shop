@@ -3,38 +3,40 @@
     <head>
     <title>Application Form | Mountain Shop</title>
     </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.mountainshop.net/assets/images/Mountian_Shop_Favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="application_form.css">
     <body>
-        <h1>Application Form</h1>
-        <form>
-            <formset>
-                <legend>Contact Info</legend>
-            <label for="name">Full Name:</label>
+        <header>
+        <img src="https://www.mountainshop.net/assets/images/logo.png" alt="Mountain Shop Logo" class="center">
+        <h1 align="center">Application Form</h1>
+        </header>
+        <form align="center">
+            <label for="name"><b>Full Name</b></label><br>
             <input type="text" id="name" required>
             <br>
             <br>
-            <label for="email">Email:</label>
+            <label for="email"><b>Email</b></label><br>
             <input type="email" id="email" required>
             <br>
             <br>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" required>
-            </formset>
-            <br>
-            <formset>
-                <legend>Resume</legend>
-            <label for="description">Outdoor Experience:</label><br>
-            <textarea type="text" id="description" placeholder="please provide a description of your outdoor experience" rows="10" cols="50" required></textarea>
+            <label for="phone"><b>Phone Number</b></label><br>
+            <input type="tel" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
             <br>
             <br>
-            <label for="file">Attach Resume:</label><br>
+            <label for="description"><b>Outdoor Experience</b></label><br>
+            <textarea type="text" id="description" placeholder="please provide a description of your outdoor experience" rows="10" cols="40" required></textarea>
+            <br>
+            <br>
+            <label for="file"><b>Attach Resume</b></label><br>
             <input type="file" id="file" required>
             <br>
             <br>
-            <label for="otherdocs">Additional Documents:</label><br>
+            <label for="otherdocs"><b>Additional Documents</b></label><br>
             <input type="file" id="otherdocs" multiple>
-            </formset>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="submit">
         </form>
-        <br>
-        <button id="submit">Submit Application</button>
     </body>
 </html>
