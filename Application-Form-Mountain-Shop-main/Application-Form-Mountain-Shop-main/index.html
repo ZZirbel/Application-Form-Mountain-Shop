@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <title>Application Form | Mountain Shop</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.mountainshop.net/assets/images/Mountian_Shop_Favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="styles.css">
+    <body>
+        <header>
+            <img id="logo" src="https://www.mountainshop.net/assets/images/logo.png" alt="Mountain Shop Logo">
+        </header>
+        <main>
+            <form action="https://formsubmit.co/mountainshopapplications@gmail.com" method="POST">
+                <h1>Application Form</h1>
+                <!-- honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- remove captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- successful submission -->
+                <input type="hidden" name="_next" value="success.html">
+                <!-- Form Contents -->
+                <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                <br>
+                <br>
+                <label for="email">Email</label><br>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                <br>
+                <br>
+                <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="Phone&nbsp;Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Enter your phone number"required>
+                <br>
+                <br>
+                <label for="position">What position are you applying for? </label><br>
+                    <select id="position" required>
+                        <option value="0">(select a position)</option>
+                        <option value="1">Shop Tech Lead</option>
+                    </select>
+                <br>
+                <br>
+                <label for="description">Outdoor Experience</label><br>
+                    <textarea type="text" id="description" name="Experience" placeholder="please provide a description of your outdoor experience..." rows="10" cols="40" required></textarea>
+                <br>
+                <br>
+                <label for="file">Attach Resume</label><br>
+                    <input type="file" id="file" name="Resume" required>
+                <br>
+                <br>
+                <label for="otherdocs">Additional Documents</label><br>
+                    <input type="file" id="otherdocs" name="Additional&nbsp;Docs" multiple>
+                <br>
+                <br>
+                <button type="submit" class="button">Submit Application</button>
+            </form>
+        </main>
+    </body>
+</html>
