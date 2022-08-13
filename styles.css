@@ -80,6 +80,8 @@ textarea {
     border-radius: 5px;
     border-style: bold;
     border-color: black;
+    box-sizing: border-box;
+    max-width: 75%;
 }
 
 .center {
