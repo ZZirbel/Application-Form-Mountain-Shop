@@ -78,8 +78,7 @@ select {
 
 textarea {
     border-radius: 5px;
-    border-style: bold;
-    border-color: black;
+    border: none;
     box-sizing: border-box;
     max-width: 75%;
 }
